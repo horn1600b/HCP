@@ -2,8 +2,8 @@ import os
 import requests
 from datetime import datetime, timedelta
 
-HCP_API_TOKEN = os.environ['a208d8135f7147328f5f746bee8d678e']
-SLACK_WEBHOOK_URL = os.environ['https://hooks.slack.com/services/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']
+HCP_API_TOKEN = os.environ['HCP_API_TOKEN']
+SLACK_WEBHOOK_URL = os.environ['SLACK_WEBHOOK_URL']
 
 def main():
     since_time = (datetime.utcnow() - timedelta(minutes=10)).isoformat()
